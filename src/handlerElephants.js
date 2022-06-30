@@ -32,5 +32,6 @@ const handlerElephants = (param) => {
   }
   return computeData(param, elephants);
 };
+console.log(handlerElephants('fdsaf'));
 
 module.exports = handlerElephants;
