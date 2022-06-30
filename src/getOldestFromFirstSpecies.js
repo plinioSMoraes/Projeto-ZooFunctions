@@ -19,7 +19,7 @@ function getOldestFromFirstSpecies(id) {
   let oldAnimal = [];
   data.employees.forEach((index) => {
     if (index.id === id) {
-       oldAnimal = oldestAnimal(index.responsibleFor[0]);
+      oldAnimal = oldestAnimal(index.responsibleFor[0]);
     }
   });
   return oldAnimal;
