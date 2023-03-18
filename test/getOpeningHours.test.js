@@ -37,6 +37,6 @@ describe('Testes da função getOpeningHours', () => {
     expect(() => { getOpeningHours('Monday', '09:60-AM'); }).toThrowError(new Error('The minutes must be between 0 and 59'));
   });
   it('Verifica se lança um erro ao digitar uma hora, os digitos sao numéricos', () => {
-    expect(() => { getOpeningHours('Monday', 'AA:60-AM'); }).toThrowError(new Error('Monday', '0a:00-AM'));
+    expect(() => { getOpeningHours('Monday', 'AA:00-AM'); }).toThrowError(new Error('The hour should represent a number'));
   });
 });
